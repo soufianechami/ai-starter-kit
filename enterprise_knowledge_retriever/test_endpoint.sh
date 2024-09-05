@@ -1,0 +1,5 @@
+curl -i -X POST \
+  https://sjc3-e1.sambanova.net/api/predict/generic/stream/879f43fc-00ea-4255-9041-0492593dabad/431baad9-b472-427a-a12e-6ad7fffc93ce \
+  -H 'Content-Type: application/json' \
+  -H 'key: fa98050f-c36c-4038-a8b3-9b937a157f02' \
+  --data-raw '{"instance":{"conversation_id":"sambaverse-conversation-id","messages":[{"message_id":0,"role":"user","content":"Hey there"},{"message_id":1,"role":"assistant","content":"Hey! Its nice to meet you. Is there something I can help you with or would you like to chat?"},{"message_id":2,"role":"user","content":""}]},"params":{"do_sample":{"type":"bool","value":"true"},"max_tokens_to_generate":{"type":"int","value":"1024"},"process_prompt":{"type":"bool","value":"true"},"repetition_penalty":{"type":"float","value":"1"},"return_token_count_only":{"type":"bool","value":"false"},"select_expert":{"type":"str","value":"Meta-Llama-3-8B-Instruct-4096"},"stop_sequences":{"type":"str","value":""},"temperature":{"type":"float","value":"0.7"},"top_k":{"type":"int","value":"50"},"top_p":{"type":"float","value":"0.95"}}}'
